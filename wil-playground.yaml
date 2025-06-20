@@ -15,14 +15,9 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v2
+        image: wil42/playground:v1
         ports:
         - containerPort: 8888
-        resources:
-          limits:
-            ephemeral-storage: "500Mi"
-          requests:
-            ephemeral-storage: "100Mi"
 ---
 apiVersion: v1
 kind: Service
